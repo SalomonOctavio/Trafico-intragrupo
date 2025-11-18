@@ -7,7 +7,7 @@ Proyecto para habilitar **llamadas a $0** entre líneas que pertenezcan al **mis
 ## 🎯 Objetivo
 - Implementar **tráfico $0 intra-grupo** (mismo RUT) sin consumo de bolsa ni cargos.  
 - Mantener **detalle en factura** con costo cero.  
-- Proveer **reportería** de control y validación.  :contentReference[oaicite:0]{index=0}
+- Proveer **reportería** de control y validación.
 
 ---
 
@@ -20,14 +20,14 @@ Proyecto para habilitar **llamadas a $0** entre líneas que pertenezcan al **mis
 **Fase 2 — RUT transversal**  
 - Asignación al RUT (pantalla/proceso).  
 - Tasación $0 entre líneas del mismo RUT **independiente** de la cuenta de facturación.  
-- Postpago/gestor (excluye cuenta control y prepago).  :contentReference[oaicite:2]{index=2}
+- Postpago/gestor (excluye cuenta control y prepago).
 
 ---
 
 ## 🧭 Decisiones clave
 - **No descontar de la bolsa** cuando la llamada sea intra-grupo/RUT.  
 - **Compatibilidad por plan/segmento**; defaults por configuración.  
-- **Factura con detalle** y costo 0 (visibilidad conservada).  :contentReference[oaicite:3]{index=3}
+- **Factura con detalle** y costo 0 (visibilidad conservada).
 
 ---
 
