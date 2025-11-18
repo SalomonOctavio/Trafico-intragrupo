@@ -1,0 +1,10 @@
+%% Flujo — Fase 1 (Gestor) y Fase 2 (RUT)
+flowchart TD
+  A["Fase 1: Gestor (flags por empresa/grupo/miembro)"] --> M["Mediación marca UDR intra-grupo"]
+  M --> T["Tasación $0 (no descuenta bolsa)"]
+  T --> F1["Factura: detalle a $0 + Reportería"]
+
+  F1 --> A2["Fase 2: Asignación por RUT (pantalla/proceso)"]
+  A2 --> T2["Tasación $0 entre líneas del mismo RUT (multicuenta)"]
+  T2 --> F2["Factura: costo 0 + control (reportes)"]
+

@@ -1,0 +1,24 @@
+%% Arquitectura — Trafico Intra-Grupo / al RUT
+graph TD
+  subgraph "Canales / CRM"
+    CRM["Siebel (config. empresa/grupo/miembro y RUT)"]
+  end
+  subgraph "Integración"
+    OSB["OSB / Orquestación"]
+  end
+  subgraph "Core"
+    MED["Mediación (UDRs marcados)"]
+    BSCS["BSCS (tasación/facturación)"]
+    REP["Reportería/Validadores"]
+  end
+
+  CRM --> OSB
+  OSB --> MED
+  OSB --> BSCS
+  MED --> BSCS
+  BSCS --> REP
+
+  style CRM fill:#bbf,stroke:#333
+  style OSB fill:#ffd,stroke:#333
+  style MED,BSCS,REP fill:#cfc,stroke:#333
+
